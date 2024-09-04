@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Workout - Luka</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Luka's Gym Tracker</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1 class="text-center">Today's Workout</h1>
+        <div class="list-group">
+            <button class="list-group-item list-group-item-action" onclick="startWorkout('Upper Body A')">Upper Body A</button>
+            <button class="list-group-item list-group-item-action" onclick="startWorkout('Lower Body A')">Lower Body A</button>
+            <button class="list-group-item list-group-item-action" onclick="startWorkout('Upper Body B')">Upper Body B</button>
+            <button class="list-group-item list-group-item-action" onclick="startWorkout('Lower Body B')">Lower Body B</button>
+        </div>
+        <div id="workout-details" class="d-none mt-4">
+            <h2 id="workout-title"></h2>
+            <ul id="exercise-list" class="list-group"></ul>
+            <button class="btn btn-primary mt-3" onclick="completeWorkout()">Mark as Completed</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
